@@ -1,0 +1,70 @@
+defaults nosave
+
+
+# version
+# Betaflight / STM32F405 (S405) 4.5.2 Nov  9 2025 / 13:51:33 (024f8e13d) MSP API: 1.46
+# config rev: a3507b7
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEEDYBEEF405V4
+manufacturer_id SPBE
+mcu_id 0039001e3133471834333035
+signature 
+
+# resources
+resource MOTOR 5 NONE
+resource MOTOR 6 NONE
+resource MOTOR 7 NONE
+resource MOTOR 8 NONE
+resource SERVO 1 B10
+resource SERVO 2 A15
+resource SERVO 3 C08
+resource SERVO 4 C09
+resource SERIAL_TX 6 NONE
+resource SERIAL_RX 1 NONE
+resource SERIAL_RX 6 NONE
+resource PINIO 1 A10
+resource PINIO 2 C07
+resource PINIO 3 C06
+
+# feature
+feature SERVO_TILT
+feature TELEMETRY
+feature LED_STRIP
+feature DISPLAY
+feature OSD
+feature CHANNEL_FORWARDING
+
+# master
+set osd_canvas_height = 13
+set pinio_config = 129,129,129,129
+set pinio_box = 40,41,42,43
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
